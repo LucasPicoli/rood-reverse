@@ -3340,7 +3340,12 @@ INCLUDE_ASM("build/src/BATTLE/BATTLE.PRG/nonmatchings/5BF94", func_800D2888);
 
 INCLUDE_ASM("build/src/BATTLE/BATTLE.PRG/nonmatchings/5BF94", func_800D2904);
 
-INCLUDE_ASM("build/src/BATTLE/BATTLE.PRG/nonmatchings/5BF94", func_800D2970);
+void func_800D2970(VECTOR* arg0, VECTOR* arg1, VECTOR* arg2)
+{
+    arg2->vx = arg0->vx + arg1->vx;
+    arg2->vy = arg0->vy + arg1->vy;
+    arg2->vz = arg0->vz + arg1->vz;
+}
 
 void _addVecToSvec(VECTOR* arg0, SVECTOR* arg1, VECTOR* arg2)
 {
